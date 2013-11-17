@@ -1,0 +1,46 @@
+/**
+ * EOX theme for reveal.js.
+ *
+ * Copyright (C) 2013 Stephan Meissl
+ *
+ * Based on black theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #bbe2ff;
+$mainFont: 'Open Sans', sans-serif;
+$mainFontSize: 30px;
+$mainColor: #0e6eb8;
+$headingFont: 'Montserrat', Impact, sans-serif;
+$headingColor: #014171;
+$headingTextShadow: none;
+$headingLetterSpacing: -0.03em;
+$headingTextTransform: none;
+$linkColor: #dd4814;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: #014171;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+
+// Remove img border
+.reveal section img {
+	border: 0px solid $mainColor;
+}
