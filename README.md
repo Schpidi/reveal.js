@@ -664,31 +664,27 @@ Reveal.initialize({
 The Leap Motion plugin lets you utilize your [Leap Motion](https://www.leapmotion.com/) device to control basic navigation of your presentation. The gestures currently supported are:
 
 ##### 1 to 2 fingers
-* Pointer &mdash; Point to anything on screen. Move your finger past the device to expand the pointer.
+Pointer &mdash; Point to anything on screen. Move your finger past the device to expand the pointer.
 
-##### 1 hand + 3 or more fingers
-
-* Left
-* Right
-* Up
-* down
-
+##### 1 hand + 3 or more fingers (left/right/up/down)
 Navigate through your slides. See config options to invert movements.
 
-##### 2 hands
-* Up
-
+##### 2 hands upwards
 Toggle the overview mode. Do it a second time to exit the overview.
 
 #### Config Options
 You can edit the following options:
-* autoCenter: Defaults to true. Center the pointer based on where you put your finger into the leap motions detection field.
-* gestureDelay: Defaults to 500. How long to delay between gestures in milliseconds.
-* naturalSwipe: Defaults to true. Swipe as though you were touching a touch screen. Set to false to invert.
-* pointerColor: Defaults to #00aaff. The color of the pointer.
-* pointerOpacity: Defaults to 0.7. The opacity of the pointer.
-* pointerSize: Defaults to 15. The minimum height and width of the pointer.
-* pointerTolerance: Defaults to 120. Bigger = slower pointer.
+
+| Property          | Default           | Description
+| ----------------- |:-----------------:| :-------------
+| autoCenter        | true              | Center the pointer based on where you put your finger into the leap motions detection field.
+| gestureDelay      | 500               | How long to delay between gestures in milliseconds.
+| naturalSwipe      | true              | Swipe as though you were touching a touch screen. Set to false to invert.
+| pointerColor      | #00aaff           | The color of the pointer.
+| pointerOpacity    | 0.7               | The opacity of the pointer.
+| pointerSize       | 15                | The minimum height and width of the pointer.
+| pointerTolerance  | 120               | Bigger = slower pointer.
+
 
 Example configuration:
 ```js
@@ -762,7 +758,7 @@ Some reveal.js features, like external markdown, require that presentations run 
 
 4. Clone the reveal.js repository
 ```
-$ git clone git@github.com:hakimel/reveal.js.git
+$ git clone https://github.com/hakimel/reveal.js.git
 ```
 
 5. Navigate to the reveal.js folder
@@ -782,6 +778,8 @@ $ grunt serve
 
 8. Open <http://localhost:8000> to view your presentation
 
+You can change the port by using `grunt serve --port 8001`.
+
 
 ### Folder Structure
 - **css/** Core styles without which the project does not function
@@ -789,6 +787,21 @@ $ grunt serve
 - **plugin/** Components that have been developed as extensions to reveal.js
 - **lib/** All other third party assets (JavaScript, CSS, fonts)
 
+
+### Contributing
+
+Please keep the [issue tracker](http://github.com/hakimel/reveal.js/issues) limited to **bug reports**, **feature requests** and **pull requests**. If you are reporting a bug make sure to include information about which browser and operating system you are using as well as the necessary steps to reproduce the issue.
+
+If you have personal support questions use [StackOverflow](http://stackoverflow.com/questions/tagged/reveal.js).
+
+
+#### Pull requests
+
+- Should follow the coding style of the file you work in, most importantly:
+  - Tabs to indent
+  - Single-quoted strings
+- Should be made towards the **dev branch**
+- Should be submitted from a feature/topic branch (not your master)
 
 
 ## License
