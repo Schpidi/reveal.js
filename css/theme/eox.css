@@ -29,9 +29,13 @@ body {
   text-shadow: none; }
 
 /* Transparent box behind text */
-section.box {
+.reveal .slides>section.box,
+.reveal .slides>section>section.box {
     border-radius: 16px;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: -15px;
+    padding-right: 15px;
+    padding-left: 15px; }
 
 /*********************************************
  * HEADERS
