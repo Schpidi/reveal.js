@@ -28,6 +28,11 @@ body {
   background: #014171;
   text-shadow: none; }
 
+/* Transparent box behind text */
+section.box {
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.8); }
+
 /*********************************************
  * HEADERS
  *********************************************/
