@@ -17,8 +17,8 @@
 
 body {
 	font-size: 18pt;
-	width: 297mm;
-	height: 229mm;
+	width: 279mm;
+	height: 216mm;
 	margin: 0 auto !important;
 	border: 0;
 	padding: 0;
@@ -124,8 +124,8 @@ ul, ol, div, p {
 	visibility: visible !important;
 	position: relative !important;
 	width: 100% !important;
-	height: 229mm !important;
-	min-height: 229mm !important;
+	height: 215.3mm !important;
+	min-height: 215.3mm !important;
 	display: block !important;
 	overflow: hidden !important;
 
@@ -187,4 +187,8 @@ ul, ol, div, p {
 }
 .reveal small a {
 	font-size: 16pt !important;
+}
+.reveal .stretch {
+	max-width: 100% !important;
+	max-height: 100% !important;
 }
